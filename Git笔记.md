@@ -107,7 +107,7 @@ $ git branch dev
 $ git checkout dev
 ```
 
-![分支1](C:\Users\180559\Desktop\note\分支1.png)
+![分支1](分支1.png)
 
 `git branch`命令查看分支,当前分支前多一个`*`
 

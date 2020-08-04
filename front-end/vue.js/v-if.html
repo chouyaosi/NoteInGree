@@ -1,0 +1,24 @@
+<script src="vue.min.js"></script>
+ 
+<div id="div1">
+   
+  <button v-on:click="toggle">切换隐藏显示</button>
+  <div v-if="show"> 默认这一条是看得见的</div>
+     
+</div>
+    
+<script>
+    
+new Vue({
+      el: '#div1',
+      data: {
+          show:true
+      },
+      methods:{
+          toggle: function(){
+              this.show=!this.show;
+          }
+      }
+    })
+    
+</script>

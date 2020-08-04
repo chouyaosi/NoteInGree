@@ -1,0 +1,24 @@
+<script src="vue.min.js"></script>
+   
+<div id="div1">
+     
+    hero name: <input v-model="name" >
+    <button @click="doClick" >提交数据</button>
+     
+</div>
+    
+<script>
+  
+new Vue({
+      el: '#div1',
+      data:{
+        name:"teemo"
+      },
+      methods:{
+          doClick:function(){
+              alert(this.name);
+          }
+      }
+    })
+    
+</script>

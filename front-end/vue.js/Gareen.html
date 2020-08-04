@@ -1,0 +1,17 @@
+
+<script src="vue.min.js"></script>
+
+<div id="div1">
+	{{gareen.name}}
+</div>
+
+<script>
+	var gareen = {"name":"mygod","hp":616};
+	
+	new Vue({
+		el:'#div1',
+		data:{
+			message:gareen
+		}
+	});
+</script>

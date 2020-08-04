@@ -1,0 +1,30 @@
+
+<html>
+<head>
+	<title>clickNumber</title>
+	<meta http-equiv="Content-Type"content="text/html";charset=utf-8>
+	<script src="vue.min.js"></script>
+</head>
+
+<body>
+<div id="div1">
+	<div>一共点击了{{clickNumber}}次</div>
+	<button v-on:click="count">click</button>
+</div>
+
+<script>
+	
+	new Vue({
+		el:'#div1',
+		data:{
+			clickNumber:0
+		},
+		methods:{
+			count:function(){
+				this.clickNumber++;
+			}
+		}
+	})
+</script>
+<body>
+</html>
